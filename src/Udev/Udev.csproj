@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>b1</VersionSuffix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>Dandy .NET Library for Udev</Title>
+    <Authors>dlech</Authors>
+    <Description>This library provides a managed wrapper around libudev.</Description>
+    <Copyright>2018 David Lechner &lt;david@lechnology.com&gt;</Copyright>
+    <PackageLicenseUrl>https://github.com/DandyCode/Linux/LICENSE.md</PackageLicenseUrl>
+    <PackateProjectUrl>https://github.com/DandyCode/Linux</PackateProjectUrl>
+    <IncludeSource>true</IncludeSource>
+    <RepositoryUrl>https://github.com/DandyCode/Linux.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifier>linux</RuntimeIdentifier>
+    <RootNamespace>Dandy.Linux</RootNamespace>
+    <AssemblyName>$(RootNamespace).$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Posix.NETStandard" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
