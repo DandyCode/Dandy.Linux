@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>b1</VersionSuffix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>Dandy .NET Library for Low-Level Linux Stuff</Title>
+    <Authors>dlech</Authors>
+    <Description>This library provides a low-level interface for Linux things like ioctls and the input subsystem.</Description>
+    <Copyright>2018 David Lechner &lt;david@lechnology.com&gt;</Copyright>
+    <PackageLicenseUrl>https://github.com/DandyCode/Linux/LICENSE.md</PackageLicenseUrl>
+    <PackateProjectUrl>https://github.com/DandyCode/Linux</PackateProjectUrl>
+    <IncludeSource>true</IncludeSource>
+    <RepositoryUrl>https://github.com/DandyCode/Linux.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <RootNamespace>Dandy.Linux</RootNamespace>
+    <AssemblyName>Dandy.Linux</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Posix.NETStandard" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
