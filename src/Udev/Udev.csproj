@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>b1</VersionSuffix>
+    <VersionSuffix>b2</VersionSuffix>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -18,9 +18,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RuntimeIdentifier>linux</RuntimeIdentifier>
-    <RootNamespace>Dandy.Linux</RootNamespace>
-    <AssemblyName>$(RootNamespace).$(MSBuildProjectName)</AssemblyName>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <RootNamespace>Dandy.Linux.Udev</RootNamespace>
+    <AssemblyName>Dandy.Linux.Udev</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
