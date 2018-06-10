@@ -370,7 +370,7 @@ namespace Dandy.Linux.Udev
         /// The retrieved value is cached in the device. Repeated calls will return the same
         /// value and not open the attribute again.
         /// </remarks>
-        public string TryTryGetAttribute(string name)
+        public string TryGetAttribute(string name)
         {
             if (name == null) {
                 throw new ArgumentNullException(nameof(name));
