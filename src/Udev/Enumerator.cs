@@ -17,6 +17,9 @@ namespace Dandy.Linux.Udev
     {
         IntPtr handle;
 
+        /// <summary>
+        /// Handle to the unmanaged instance
+        /// </summary>
         public IntPtr Handle {
             get {
                 if (handle == IntPtr.Zero) {
@@ -300,7 +303,7 @@ namespace Dandy.Linux.Udev
         }
 
         /// <summary>
-        /// Create a new instance of <see cref="Enumerate" /> using the specified <see cref="Context" />
+        /// Create a new instance of <see cref="Enumerator" /> using the specified <see cref="Context" />
         /// </summary>
         public Enumerator(Context udev) : this(New(udev))
         {
