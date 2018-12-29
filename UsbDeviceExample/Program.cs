@@ -5,23 +5,25 @@ namespace UsbDeviceExample
 {
     internal class Program
     {
-        private const string Block_Tag = "block";
-        private const string Block_Usb_Tag = "usb";
-        private const string Device_Type_Tag = "usb-device";
+        private const string BlockTag = "block";
+        private const string BlockUsbTag = "usb";
+        private const string DeviceTypeTag = "usb-device";
 
         private static void Main(string[] args)
         {
+            // Device creating through monitor
             while (true)
             {
                 try
                 {
-                    using (var udev = new Context()) {
+                    using (var udev = new Context())
+                    {
                         using (var monitor = new Monitor(udev))
                         {
                             monitor.Blocking = true;
                             //monitor.AddMatchTag("systemd");
-                            monitor.AddMatchSubsystem(Block_Tag);
-                            monitor.AddMatchSubsystem(Block_Usb_Tag, Device_Type_Tag);
+                            monitor.AddMatchSubsystem(BlockTag);
+                            monitor.AddMatchSubsystem(BlockUsbTag, DeviceTypeTag);
 
                             monitor.EnableReceiving();
                             using (var d = monitor.TryReceiveDevice())
